@@ -1,0 +1,20 @@
+{
+  "name": "npmweb/admin-theme",
+  "description": "CSS theme for admin interfaces",
+  "license": "proprietary",
+  "type": "library",
+    "require": {
+        "robloach/component-installer": "*",
+        "components/bootstrap": "3.2.*"
+    },
+    "extra": {
+        "component": {
+            "styles": [
+                "css/admin-theme.css",
+                "css/plugins/dataTables.boostrap.css",
+                "css/plugins/timeline.css",
+                "css/plugins/metisMenu/metisMenu.min.css"
+            ]
+        }
+    }
+}
