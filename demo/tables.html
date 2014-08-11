@@ -21,11 +21,14 @@
     <!-- DataTables CSS -->
     <link href="../css/plugins/dataTables.bootstrap.css" rel="stylesheet">    
 
-    <!-- Custom CSS -->
-    <link href="../css/admin-theme.css" rel="stylesheet">
+    <!-- Admin CSS -->
+    <link href="../css/custom.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="../font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Custom CSS -->
+    <link href="../css/admin-theme.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -231,10 +234,282 @@
         <!-- /.col-lg-12 -->
     </div>
     <!-- /.row -->
+    
+	<div class="row">
+		<div class="col-md-12">
+			
+			<div class="panel panel-default panel-condensed" id="userPane">
+				<div class="panel-heading">
+					<div class="row">
+						<div class="col-md-11">
+							<strong>Users</strong>
+						</div>
+						<div class="col-md-1">
+							<a class="pull-right" data-toggle="collapse" data-parent="userPane" href="#userBody">
+								<span class="glyphicon glyphicon-chevron-down"></span>
+								</a>
+						</div>
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.panel-heading -->
+				
+				<div id="userBody" class="panel-collaps collapse in">
+						
+					<div class="panel-body table-responsive">
+		
+						<table class="data-table-column-filter table table-bordered table-striped dataTable" style="margin-bottom:0;" id="dataTables-example" aria-describedby="DataTables_Table_1_info">
+							<thead>
+								<tr role="row"><th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
+										Name
+									: activate to sort column descending">
+										Name
+									</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="
+										E-mail
+									: activate to sort column ascending" >
+										E-mail
+									</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="
+										Grantee
+									: activate to sort column ascending">
+										Grantee
+									</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="
+										Status
+									: activate to sort column ascending">
+										Status
+									</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label=": activate to sort column ascending"></th></tr>
+							</thead>
+
+							<tfoot>
+								<tr>
+									<th rowspan="1" colspan="1">
+										<span class="filter_column filter_text">
+											<input type="text" class="search_init text_filter" placeholder="Name">
+										</span>
+									</th>
+									<th rowspan="1" colspan="1"><span class="filter_column filter_text"><input type="text" class="search_init text_filter" placeholder="E-mail"></span></th>
+									<th rowspan="1" colspan="1"><span class="filter_column filter_text"><input type="text" class="search_init text_filter" placeholder="Grantee"></span></th>
+									<th colspan="2" rowspan="1"><span class="filter_column filter_text"><input type="text" class="search_init text_filter" placeholder="Status"></span><a class="btn btn-success pull-right" href="#"><i class="glyphicon glyphicon-plus"></i> add</a></th>
+								</tr> 
+							</tfoot>
+							<tbody role="alert" aria-live="polite" aria-relevant="all">
+								<tr>
+									<td class=" sorting_1">Ahmed Sanford</td>
+									<td>jon@gmail.com</td>
+									<td>Catholic Charities WV</td>
+									<td>
+										<span class="label label-success">Active</span>
+									</td>
+									<td>
+										<div class="text-right">
+											<a class="btn btn-success btn-xs" href="#">
+												<i class="glyphicon glyphicon-pencil tooltips" data-original-title="Edit User" title="Edit User"></i>
+											</a>
+											<a class="btn btn-warning btn-xs" href="#">
+												<i class="glyphicon glyphicon-refresh tooltips" data-original-title="Toggle User Status" title="Toggle User Status"></i>
+											</a>
+											<a class="btn btn-danger btn-xs" href="#">
+												<i class="glyphicon glyphicon-ban-circle tooltips" data-original-title="Remove User" title="Remove User"></i>
+											</a>
+										</div>
+									</td>
+								</tr><tr>
+									<td class=" sorting_1">Audrey Hansen</td>
+									<td>cali@gmail.com</td>
+									<td>RESA 1</td>
+									<td>
+										<span class="label label-danger">Inactive</span>
+									</td>
+									<td>
+										<div class="text-right">
+											<a class="btn btn-success btn-xs" href="#">
+												<i class="glyphicon glyphicon-pencil tooltips" data-original-title="Edit User" title="Edit User"></i>
+											</a>
+											<a class="btn btn-warning btn-xs" href="#">
+												<i class="glyphicon glyphicon-refresh tooltips" data-original-title="Toggle User Status" title="Toggle User Status"></i>
+											</a>
+											<a class="btn btn-danger btn-xs" href="#">
+												<i class="glyphicon glyphicon-ban-circle tooltips" data-original-title="Remove User" title="Remove User"></i>
+											</a>
+										</div>
+									</td>
+								</tr><tr>
+									<td class=" sorting_1">August Rice</td>
+									<td>austyn@yahoo.com</td>
+									<td>Boone County Schools</td>
+									<td>
+										<span class="label label-success">Active</span>
+									</td>
+									<td>
+										<div class="text-right">
+											<a class="btn btn-success btn-xs" href="#">
+												<i class="glyphicon glyphicon-pencil tooltips" data-original-title="Edit User" title="Edit User"></i>
+											</a>
+											<a class="btn btn-warning btn-xs" href="#">
+												<i class="glyphicon glyphicon-refresh tooltips" data-original-title="Toggle User Status" title="Toggle User Status"></i>
+											</a>
+											<a class="btn btn-danger btn-xs" href="#">
+												<i class="glyphicon glyphicon-ban-circle tooltips" data-original-title="Remove User" title="Remove User"></i>
+											</a>
+										</div>
+									</td>
+								</tr><tr>
+									<td class=" sorting_1">Brionna Oberbrunner</td>
+									<td>hoyt@gmail.com</td>
+									<td>North Central Regional Jail</td>
+									<td>
+										<span class="label label-success">Active</span>
+									</td>
+									<td>
+										<div class="text-right">
+											<a class="btn btn-success btn-xs" href="#">
+												<i class="glyphicon glyphicon-pencil tooltips" data-original-title="Edit User" title="Edit User"></i>
+											</a>
+											<a class="btn btn-warning btn-xs" href="#">
+												<i class="glyphicon glyphicon-refresh tooltips" data-original-title="Toggle User Status" title="Toggle User Status"></i>
+											</a>
+											<a class="btn btn-danger btn-xs" href="#">
+												<i class="glyphicon glyphicon-ban-circle tooltips" data-original-title="Remove User" title="Remove User"></i>
+											</a>
+										</div>
+									</td>
+								</tr><tr>
+									<td class=" sorting_1">Clare Harvey</td>
+									<td>marlene@gmail.com</td>
+									<td>Eastern WVCTC</td>
+									<td>
+										<span class="label label-danger">Inactive</span>
+									</td>
+									<td>
+										<div class="text-right">
+											<a class="btn btn-success btn-xs" href="#">
+												<i class="glyphicon glyphicon-pencil tooltips" data-original-title="Edit User" title="Edit User"></i>
+											</a>
+											<a class="btn btn-warning btn-xs" href="#">
+												<i class="glyphicon glyphicon-refresh tooltips" data-original-title="Toggle User Status" title="Toggle User Status"></i>
+											</a>
+											<a class="btn btn-danger btn-xs" href="#">
+												<i class="glyphicon glyphicon-ban-circle tooltips" data-original-title="Remove User" title="Remove User"></i>
+											</a>
+										</div>
+									</td>
+								</tr><tr>
+									<td class=" sorting_1">Davion Rowe</td>
+									<td>simone@gmail.com</td>
+									<td>Mason County Schools</td>
+									<td>
+										<span class="label label-danger">Inactive</span>
+									</td>
+									<td>
+										<div class="text-right">
+											<a class="btn btn-success btn-xs" href="#">
+												<i class="glyphicon glyphicon-pencil tooltips" data-original-title="Edit User" title="Edit User"></i>
+											</a>
+											<a class="btn btn-warning btn-xs" href="#">
+												<i class="glyphicon glyphicon-refresh tooltips" data-original-title="Toggle User Status" title="Toggle User Status"></i>
+											</a>
+											<a class="btn btn-danger btn-xs" href="#">
+												<i class="glyphicon glyphicon-ban-circle tooltips" data-original-title="Remove User" title="Remove User"></i>
+											</a>
+										</div>
+									</td>
+								</tr><tr>
+									<td class=" sorting_1">Domenick Runte</td>
+									<td>godfrey@hotmail.com</td>
+									<td>Western Regional Jail</td>
+									<td>
+										<span class="label label-success">Active</span>
+									</td>
+									<td>
+										<div class="text-right">
+											<a class="btn btn-success btn-xs" href="#">
+												<i class="glyphicon glyphicon-pencil tooltips" data-original-title="Edit User" title="Edit User"></i>
+											</a>
+											<a class="btn btn-warning btn-xs" href="#">
+												<i class="glyphicon glyphicon-refresh tooltips" data-original-title="Toggle User Status" title="Toggle User Status"></i>
+											</a>
+											<a class="btn btn-danger btn-xs" href="#">
+												<i class="glyphicon glyphicon-ban-circle tooltips" data-original-title="Remove User" title="Remove User"></i>
+											</a>
+										</div>
+									</td>
+								</tr><tr>
+									<td class=" sorting_1">Elnora Balistreri</td>
+									<td>desmond@yahoo.com</td>
+									<td>RESA 5</td>
+									<td>
+										<span class="label label-danger">Inactive</span>
+									</td>
+									<td>
+										<div class="text-right">
+											<a class="btn btn-success btn-xs" href="#">
+												<i class="glyphicon glyphicon-pencil tooltips" data-original-title="Edit User" title="Edit User"></i>
+											</a>
+											<a class="btn btn-warning btn-xs" href="#">
+												<i class="glyphicon glyphicon-refresh tooltips" data-original-title="Toggle User Status" title="Toggle User Status"></i>
+											</a>
+											<a class="btn btn-danger btn-xs" href="#">
+												<i class="glyphicon glyphicon-ban-circle tooltips" data-original-title="Remove User" title="Remove User"></i>
+											</a>
+										</div>
+									</td>
+								</tr><tr>
+									<td class=" sorting_1">Ericka Heidenreich</td>
+									<td>niko@yahoo.com</td>
+									<td>Ohio County Schools</td>
+									<td>
+										<span class="label label-danger">Inactive</span>
+									</td>
+									<td>
+										<div class="text-right">
+											<a class="btn btn-success btn-xs" href="#">
+												<i class="glyphicon glyphicon-pencil tooltips" data-original-title="Edit User" title="Edit User"></i>
+											</a>
+											<a class="btn btn-warning btn-xs" href="#">
+												<i class="glyphicon glyphicon-refresh tooltips" data-original-title="Toggle User Status" title="Toggle User Status"></i>
+											</a>
+											<a class="btn btn-danger btn-xs" href="#">
+												<i class="glyphicon glyphicon-ban-circle tooltips" data-original-title="Remove User" title="Remove User"></i>
+											</a>
+										</div>
+									</td>
+								</tr><tr>
+									<td class=" sorting_1">Flavie Stracke</td>
+									<td>verna@gmail.com</td>
+									<td>Potomac Highlands Regional Jail</td>
+									<td>
+										<span class="label label-danger">Inactive</span>
+									</td>
+									<td>
+										<div class="text-right">
+											<a class="btn btn-success btn-xs" href="#">
+												<i class="glyphicon glyphicon-pencil tooltips" data-original-title="Edit User" title="Edit User"></i>
+											</a>
+											<a class="btn btn-warning btn-xs" href="#">
+												<i class="glyphicon glyphicon-refresh tooltips" data-original-title="Toggle User Status" title="Toggle User Status"></i>
+											</a>
+											<a class="btn btn-danger btn-xs" href="#">
+												<i class="glyphicon glyphicon-ban-circle tooltips" data-original-title="Remove User" title="Remove User"></i>
+											</a>
+										</div>
+									</td>
+								</tr></tbody>
+							</table>				
+					</div>
+					<!--/panel-body-->
+				</div>
+				<!--/#userBody-->
+			</div>
+			<!--/panel -->
+		</div>
+		<!--/.col-md-12 -->
+	</div>
+	<!--/.row-->
+
+    
     <div class="row">
         <div class="col-lg-12">
             <div class="table-responsive">
-                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                <table class="table table-striped table-bordered table-hover" id="dataTables-example2">
                     <thead>
                         <tr>
                             <th>Rendering engine</th>
@@ -981,7 +1256,7 @@
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>
     $(document).ready(function() {
-        $('#dataTables-example').dataTable();
+        $('#dataTables-example, #dataTables-example2').dataTable();
     });
     </script>
 
