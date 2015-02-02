@@ -120,7 +120,8 @@ a.grey {
 
 .icon-bar {
   background: #ffffff;
-  border: 1px solid #e0e0e0; }
+  border: 1px solid #e0e0e0;
+  margin-bottom: 2rem; }
   .icon-bar label, .icon-bar i {
     color: #3dc48e; }
   .icon-bar .item:hover {
@@ -451,6 +452,12 @@ footer#mainfoot {
   padding: 2rem 0;
   margin-top: 2rem;
   text-align: center; }
+
+@media only screen and (max-width: 480px) {
+  .panel, .info-panel, .tabs-content {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+ }
 
 .shadow, .f-dropdown, .info-panel, .accordion, .panel, table, .pinned {
   -webkit-box-shadow: 0 1px 4px rgba(128, 128, 128, 0.4);

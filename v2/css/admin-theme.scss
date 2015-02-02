@@ -202,6 +202,7 @@ a.grey {
 .icon-bar {
 	background: $white;
 	border: 1px solid $lightgrey;
+	margin-bottom: 2rem;
 	
 	label, i {
 		color: $green;
@@ -606,7 +607,13 @@ footer#mainfoot {
 	margin-top: 2rem;
 	text-align: center;
 }
- 
+
+@media only screen and (max-width: 480px) {
+	.panel, .info-panel, .tabs-content {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
 
 // MIXINS
 
