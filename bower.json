@@ -8,8 +8,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "foundation": "5.5.1",
-    "foundation-icon-fonts": "*"
+    "foundation": "5.5.1"
   },
   "ignore": [
     "**/.*",
