@@ -51,7 +51,7 @@ h5 {
 
 // buttons
 
-.button {
+.button, button {
 	border-radius: 3px;
 	border-width: 1px;
 	border-color: transparent;
@@ -160,7 +160,7 @@ a.grey {
 	margin-bottom: 2rem;
 	@extend .shadow;
 
-	>.button {
+	>.button, >button {
 		margin: 1rem 0 0;
 	}
 
@@ -263,6 +263,21 @@ header#masthead {
 						font-size: 1rem;
 					}
 				}
+				
+				&:hover {
+					background: lighten( $dark, 10% ) !important;
+					color: $lightgrey !important;
+				}
+			}
+			
+			&.active:not(.has-form) a:not(.button) {
+				background: lighten( $dark, 10%);
+				color: $white;
+				
+				&:hover {
+					background: lighten( $dark, 10%);
+					color: $green;
+				}
 			}
 
 			&.right-divider {
@@ -311,7 +326,7 @@ header#masthead {
 	 @extend .shadow;
 	 margin-bottom: 2rem;
 
-	.button.tiny {
+	.button.tiny,buton.tiny {
 		padding: .5rem .5rem;
 		margin-bottom: 0;
 	}
@@ -321,7 +336,7 @@ header#masthead {
 	}
 
 	tfoot {
-		.button {
+		.button,button {
 			margin-bottom: 0.3rem;
 		}
 	}
@@ -585,7 +600,20 @@ div.DTFC_LeftFootWrapper table {
 
 	table.responsive { margin-bottom: 0; }
 
-	.pinned { position: absolute; left: 0; top: 0; background: #fff; width: 35%; overflow: hidden; overflow-x: scroll; border-right: 1px solid $lightgrey; border-left: 1px solid $lightgrey; @extend .shadow;}
+	.pinned { 
+		position: absolute; 
+		left: 0; top: 0; 
+		background: #fff; 
+		width: 35%; 
+		overflow: hidden; 
+		overflow-x: scroll; 
+		border-right: 1px solid $lightgrey; 
+		border-left: 1px solid $lightgrey; 
+		-webkit-box-shadow: 0 1px 4px rgba(128,128,128,.4);
+		-moz-box-shadow: 0 1px 4px rgba(128,128,128,.4);
+		box-shadow: 0 1px 4px rgba(128,128,128,.4);
+		
+	}
 	.pinned table { border-right: none; border-left: none; width: 100%; }
 	.pinned table th, .pinned table td { white-space: nowrap; }
 	.pinned td:last-child { border-bottom: 0; }

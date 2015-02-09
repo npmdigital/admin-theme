@@ -1,4 +1,4 @@
-@import 'foundation';
+@import '../vendor/foundation/scss/foundation.scss';
 // @import 'foundation-icons';
-@import 'admin-theme';
+@import '../../../src/scss/admin-theme.scss';
 @import 'app.scss';

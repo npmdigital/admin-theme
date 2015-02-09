@@ -1,1 +1,4 @@
 node_modules
+demo/includes/scss/.sass-cache/
+src/scss/.sass-cache/
+config.codekit
