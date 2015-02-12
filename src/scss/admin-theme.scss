@@ -643,6 +643,34 @@ footer#mainfoot {
 	}
 }
 
+// CUSTOM COMPONENTS
+
+.panel-with-heading {
+
+  padding: 0;
+
+  .panel-heading {
+    padding: 1.25rem;
+  }
+  .panel-body {
+    padding: 1.25rem;
+  }
+
+}
+
+
+// LOGIN PAGE
+
+.login {
+  .login-panel {
+    margin-top: 25%;
+
+    .panel-heading {
+      border-bottom: solid 1px #ddd;
+    }
+  }
+}
+
 // MIXINS
 
 .shadow {
