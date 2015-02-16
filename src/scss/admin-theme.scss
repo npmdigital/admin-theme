@@ -21,7 +21,7 @@ body {
 }
 
 .section {
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 }
 
 // Foundation Overides
@@ -51,7 +51,7 @@ h5 {
 
 // buttons
 
-.button, button {
+.button, button, input[type="submit"], input[type="button"] {
 	border-radius: 3px;
 	border-width: 1px;
 	border-color: transparent;
@@ -650,10 +650,6 @@ footer#mainfoot {
 	padding: 2rem 0;
 	margin-top: 2rem;
 	text-align: center;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
 }
 
 @media only screen and (max-width: 480px) {
