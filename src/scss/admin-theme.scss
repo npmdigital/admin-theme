@@ -690,15 +690,19 @@ footer#mainfoot {
       background: transparent;
     }
 
-    tr {
-      th, td {
-        padding-left: 0;
-      }
-    }
-
     .button.tiny {
       font-size: 20px;
       padding: 3px;
+    }
+  }
+}
+
+.panel {
+  .bbGrid {
+    tr {
+      th, td {
+        padding-left: 0 !important;
+      }
     }
   }
 }
