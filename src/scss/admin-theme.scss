@@ -665,15 +665,6 @@ footer#mainfoot {
   display: inline-block;
   margin-top: 12px;
   margin-left: 8px;
-
-  .btn {
-    float: left;
-    margin-left: 8px;
-
-    &.btn-danger {
-      margin-left: 12px;
-    }
-  }
 }
 
 .panel-with-heading {
@@ -699,8 +690,10 @@ footer#mainfoot {
       background: transparent;
     }
 
-    th, td {
-      padding-left: 0;
+    tr {
+      th, td {
+        padding-left: 0;
+      }
     }
 
     .button.tiny {
