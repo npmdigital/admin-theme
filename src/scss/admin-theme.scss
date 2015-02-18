@@ -337,7 +337,6 @@ header#masthead {
 // Tables
 
  table {
-   width: 100%;
 	 border-spacing: 0;
 	 border: none;
 	 @extend .shadow;
@@ -692,6 +691,8 @@ footer#mainfoot {
 
 .bbGrid {
   table {
+    width: 100%;
+
     margin-bottom: 0;
 
     thead {
