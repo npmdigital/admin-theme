@@ -263,17 +263,17 @@ header#masthead {
 						font-size: 1rem;
 					}
 				}
-				
+
 				&:hover {
 					background: lighten( $dark, 10% ) !important;
 					color: $lightgrey !important;
 				}
 			}
-			
+
 			&.active:not(.has-form) a:not(.button) {
 				background: lighten( $dark, 10%);
 				color: $white;
-				
+
 				&:hover {
 					background: lighten( $dark, 10%);
 					color: $green;
@@ -311,17 +311,17 @@ header#masthead {
 	background: $white;
 	border: none;
 	@extend .shadow;
-	
+
 	&.login {
 		margin: 4rem 0;
 		padding-top: 2rem;
-		
+
 		span.prefix, label.prefix {
 			color: $grey;
 			background: transparent;
 			border: none;
 			text-align: left;
-			
+
 			i {
 				font-size: 24px;
 			}
@@ -337,6 +337,7 @@ header#masthead {
 // Tables
 
  table {
+   width: 100%;
 	 border-spacing: 0;
 	 border: none;
 	 @extend .shadow;
@@ -616,19 +617,19 @@ div.DTFC_LeftFootWrapper table {
 
 	table.responsive { margin-bottom: 0; }
 
-	.pinned { 
-		position: absolute; 
-		left: 0; top: 0; 
-		background: #fff; 
-		width: 35%; 
-		overflow: hidden; 
-		overflow-x: scroll; 
-		border-right: 1px solid $lightgrey; 
-		border-left: 1px solid $lightgrey; 
+	.pinned {
+		position: absolute;
+		left: 0; top: 0;
+		background: #fff;
+		width: 35%;
+		overflow: hidden;
+		overflow-x: scroll;
+		border-right: 1px solid $lightgrey;
+		border-left: 1px solid $lightgrey;
 		-webkit-box-shadow: 0 1px 4px rgba(128,128,128,.4);
 		-moz-box-shadow: 0 1px 4px rgba(128,128,128,.4);
 		box-shadow: 0 1px 4px rgba(128,128,128,.4);
-		
+
 	}
 	.pinned table { border-right: none; border-left: none; width: 100%; }
 	.pinned table th, .pinned table td { white-space: nowrap; }
@@ -661,6 +662,21 @@ footer#mainfoot {
 
 // CUSTOM COMPONENTS
 
+.page-header-buttons {
+  display: inline-block;
+  margin-top: 12px;
+  margin-left: 8px;
+
+  .btn {
+    float: left;
+    margin-left: 8px;
+
+    &.btn-danger {
+      margin-left: 12px;
+    }
+  }
+}
+
 .panel-with-heading {
 
   padding: 0;
@@ -672,6 +688,25 @@ footer#mainfoot {
     padding: 1.25rem;
   }
 
+}
+
+.bbGrid {
+  table {
+    margin-bottom: 0;
+
+    thead {
+      background: transparent;
+    }
+
+    th, td {
+      padding-left: 0;
+    }
+
+    .button.tiny {
+      font-size: 20px;
+      padding: 3px;
+    }
+  }
 }
 
 
