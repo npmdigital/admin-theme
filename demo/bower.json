@@ -11,7 +11,8 @@
     "jquery": "2.1.1",
     "DataTables": "1.10.4",
     "responsive-tables": "*",
-    "foundation-icon-fonts": "*"
+    "foundation-icon-fonts": "*",
+    "bbGrid": "git@github.com:npmweb/bbgrid#ddb3eaac7088adcb16e48d53340f8088519c71d6"
   },
   "ignore": [
     "**/.*",

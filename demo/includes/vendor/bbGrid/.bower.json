@@ -1,0 +1,27 @@
+{
+  "name": "bbGrid",
+  "main": "bbGrid.js",
+  "homepage": "https://github.com/npmweb/bbGrid",
+  "authors": [
+    "Russell Todd <russell.todd@northpoint.org>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "backbone": ">= 1.1.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "ddb3eaac70",
+  "_resolution": {
+    "type": "commit",
+    "commit": "ddb3eaac7088adcb16e48d53340f8088519c71d6"
+  },
+  "_source": "git@github.com:npmweb/bbgrid.git",
+  "_target": "ddb3eaac7088adcb16e48d53340f8088519c71d6",
+  "_originalSource": "git@github.com:npmweb/bbgrid"
+}
