@@ -1,6 +1,9 @@
 {
   "name": "admin-theme",
-  "main": "src/scss/admin-theme.scss",
+  "main": [
+    "src/scss/admin-theme.scss",
+    "src/js/admin-theme.js"
+  ],
   "version": "1.0.0",
   "homepage": "https://github.com/npmweb/admin-theme",
   "authors": [

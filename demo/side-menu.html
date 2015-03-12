@@ -28,7 +28,7 @@
         </ul>
 
         <section class="top-bar-section">
-		
+
 		  <!-- duplicate menu here for mobile view -->
 	      <ul class="mobile-menu show-for-small-only">
 			<li role="menuitem"><a href="#"><i class="fi-torso"></i> User profile</a></li>
@@ -37,12 +37,12 @@
 			<li class="has-dropdown" role="menuitem"><a href="#"><i class="fi-page"></i> Entries</a>
 				<ul class="dropdown">
 					<li><a href="#"><i class="fi-plus"></i> add new</a></li>
-					<li><a href="#"><i class="fi-pencil"></i> edit entries</a></li>					
+					<li><a href="#"><i class="fi-pencil"></i> edit entries</a></li>
 				</ul>
 			</li>
 			<li class="divider"></li>
 	      </ul>
-	      
+
           <!-- Right Nav Section -->
           <ul class="right">
             <li class="has-dropdown">
@@ -55,13 +55,13 @@
               </ul>
             </li>
           </ul>
-	  
+
           </section>
       </nav>
     </div><!-- / .contain-to-grid -->
 
   </header><!-- / #masthead -->
-  
+
   	<aside id="nav-container" class="visible-for-medium-up">
 		<ul class="side-nav" role="navigation" title="Link List">
 			<li class="name"><h1><a href="#"><img src="includes/img/logo-template-24x180.png" alt="NPM Digital" /></a></h1></li>
@@ -78,7 +78,7 @@
 			</li>
 		</ul>
 	</aside>
- 
+
 	<!-- Main content here -->
 	<div id="content">
 		<div class="row">
@@ -91,17 +91,17 @@
                 </ul>
 			</div>
 		</div>
-		
-		
+
+
 		<div class="row">
 			<div class="medium-12 columns">
-				
+
 				<header>
 					<h1>Child Church Name</h1>
 				</header>
-				
+
 				<div class="panel">
-					
+
 					<div class="row">
 						<div class="medium-12 columns">
 							<header class="clearfix">
@@ -109,71 +109,71 @@
 								<a class="button small right" href="#">Edit Church Info</a>
 							</header>
 						</div>
-					</div><!--/ row -->					
-					
+					</div><!--/ row -->
+
 					<div class="row">
 						<div class="medium-6 columns">
-							
+
 							<h4>Location</h4>
 							<hr />
-							
+
 							<div class="row">
 								<div class="medium-12 columns">
-									
+
 									<div class="static-field">
 										<strong>Address</strong>
 										<p>455 Northpoint Drive</p>
 									</div><!--/static field -->
-									
+
 								</div><!-- /medium-12 -->
 							</div><!-- / row -->
-							
+
 							<div class="row">
 								<div class="medium-8 columns">
-									
+
 									<div class="static-field">
 										<strong>City</strong>
 										<p>Alpharetta</p>
 									</div><!--/static field -->
-									
+
 								</div><!-- /medium-8 -->
-								
+
 								<div class="medium-4 columns">
-									
+
 									<div class="static-field">
 										<strong>State</strong>
 										<p>GA</p>
 									</div><!--/static field -->
-									
-								</div><!-- /medium-4 -->								
-								
+
+								</div><!-- /medium-4 -->
+
 							</div><!-- / row -->
-							
+
 							<div class="row">
 								<div class="medium-6 columns">
-									
+
 									<div class="static-field">
 										<strong>Zip Code</strong>
 										<p>30322</p>
 									</div><!--/static field -->
-									
+
 								</div><!-- /medium-6 -->
-								
+
 								<div class="medium-6 columns">
-									
+
 									<div class="static-field">
 										<strong>Country</strong>
 										<p>US</p>
 									</div><!--/static field -->
-									
-								</div><!-- /medium-6 -->								
-								
-							</div><!-- / row -->															
-							
+
+								</div><!-- /medium-6 -->
+
+							</div><!-- / row -->
+
 						</div><!-- / medium-6 -->
-						
+
 						<div class="medium-3 columns">
-							
+
 							<h4>Additional Info</h4>
 							<hr />
 							<ul class="naked-list">
@@ -183,9 +183,9 @@
 							</ul>
 
 						</div><!-- /4 -->
-						
+
 						<div class="medium-3 columns">
-							
+
 							<h4>Campaign Confirmation email</h4>
 							<hr />
 							<ul class="naked-list">
@@ -193,16 +193,16 @@
 								<li class="clearfix"><strong>Email Signature</strong> <br /> <span>The Children of intersect Project Team</span></li>
 							</ul>
 
-						</div><!-- /4 -->	
-											
-					</div><!-- /row -->
-					
-				</div><!--/ panel -->
-				
-			</div><!--/ medium-12 -->
-		</div><!-- /row --> 
+						</div><!-- /4 -->
 
-			
+					</div><!-- /row -->
+
+				</div><!--/ panel -->
+
+			</div><!--/ medium-12 -->
+		</div><!-- /row -->
+
+
 	</div><!--/ #content -->
 
   <footer id="mainfoot">
@@ -219,18 +219,12 @@
   <!-- Datatables js -->
   <script type="text/javascript" src="includes/vendor/DataTables/media/js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" src="includes/js/vendor/dataTables.foundation.js"></script>
+  <script type="text/javascript" src="../src/js/admin-theme.js"></script>
 
   <script>
-      
+
       $(document).foundation();
-      
-      	$('.side-nav li:has("ul")').children('ul').hide(); //hide submenu
-		$('.side-nav li:has("ul")').addClass('hasChildren'); // add class to li ul child
-		$('.side-nav li:has("ul")').click(function(){
-		$(this).toggleClass( "active" ) // add active class to clicked menu item
-		    $(this).children('ul').slideToggle(); //toggle submenu
-	});
-      
+
   </script>
   </body>
 </html>
