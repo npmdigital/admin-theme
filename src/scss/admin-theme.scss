@@ -1,6 +1,7 @@
 // Colors
 
 	$white:			#ffffff;
+	$softwhite:		#f9f9f9;
 	$offwhite:		#f0f0f0;
 	$lightgrey:		#e0e0e0;
 	$softgrey:		#6f6f6f;
@@ -44,6 +45,10 @@ header {
 
 // Foundation Overides
 
+.reveal-modal .close-reveal-modal {
+	font-size: 1.5rem;
+}
+
 // font/text
 
 h1 {
@@ -51,7 +56,7 @@ h1 {
 }
 
 h2 {
-	font-size:1.8rem;
+	font-size:1.6rem;
 }
 h3 {
 	font-size: 1.4rem;
@@ -81,6 +86,12 @@ h5 {
 			margin-right: 0;
 		}
 	}
+}
+
+.button-more:before {
+	content: "•••";
+	text-indent: 0;
+	display: block;
 }
 
 .dropdown.button.secondary:after, button.dropdown.secondary:after {
@@ -220,7 +231,55 @@ a.grey {
 		background: #fff;
 		margin-bottom: 0;
 	}
+}
 
+.action-panel {
+	background: $white;
+	border: 1px solid $lightgrey;
+	padding: 0;
+	margin-bottom: 2rem;
+	@extend .shadow;
+	
+		header {
+			padding: 1rem 1rem;
+			border-bottom: 1px solid $offwhite;
+			
+			h1,h2,h3 {
+				margin-bottom: 0;
+			}
+			
+			.button, a.button, button {
+				margin-bottom: 0;
+				margin-left: .5rem;
+				padding-top: .5rem;
+				padding-bottom: .5rem;
+				padding-left: 1rem;
+				padding-right: 1rem;
+				font-size: 0.9rem;
+			}
+			
+		}
+		
+		footer {
+			background: $softwhite;
+			border-top: 1px solid $lightgrey;
+			padding: .5rem 1rem;
+			
+			a.button, button, .button {
+				margin-bottom: 0;
+			}
+			
+			span {
+				font-size: .8rem;
+				color: $softgrey;
+				line-height: 35px;
+			}
+		}
+		
+		.content {
+			padding: 1rem 1rem 1.5rem;
+		}
+	
 }
 
 .accordion {
@@ -779,7 +838,7 @@ div.DTFC_LeftFootWrapper table {
 
 
 footer#mainfoot {
-	background: $dark;
+	background: $softwhite;
 	color: $lightgrey;
 	font-size: .8rem;
 	padding: 2rem 0;

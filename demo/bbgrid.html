@@ -21,7 +21,7 @@
       <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
           <li class="name">
-            <h1><a href="#"><img src="includes/img/logo-template-24x180.png" alt="NPM Digital" /></a></h1>
+          	<h1><a href="#"><img src="includes/img/logo-template-24x180.png" alt="NPM Digital" /></a></h1>
           </li>
           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
           <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -62,16 +62,86 @@
 
   <div class="row">
     <div class="medium-12 columns">
-      <div class="panel">
-        <div class="clearfix">
+      <div class="action-panel">
+       
+        <header class="clearfix">
           <h2 class="left">
             People
           </h2>
-          <a href="#" class="button tiny right">Create a New Person</a>
-        </div>
+          <a href="#" class="button right" data-reveal-id="bbModal">Create a New User</a>
+        </header>
+        
+        <div id="bbModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+	      	<h2>Create New User</h2>
+	      	<hr />
+	      	
+					<div class="row">
+					  <div class="small-12 small-centered columns">
+					      <form>
+					        <div class="row">
+					          <div class="large-1 columns">
+					            <label>Prefix
+					              <select>
+					                <option value="husker">Mr</option>
+					                <option value="starbuck">Ms</option>
+					                <option value="hotdog">Mrs</option>
+					                <option value="apollo">Master</option>
+					              </select>
+					            </label>
+					          </div>						        
+					          <div class="large-5 columns">
+					            <label>First Name
+					              <input type="text" placeholder="First name" />
+					            </label>
+					          </div>
+					          <div class="large-6 columns">
+					            <label>Last Name
+					              <input type="text" placeholder="Last Name" />
+					            </label>
+					          </div>
+					        </div><!--/row -->
+					        <div class="row">		
+					          <div class="large-6 columns">
+					            <label>Grantee
+					              <input type="text" placeholder="Sir. Church of the third Gospel of John" />
+					            </label>
+					          </div>			        
+					          <div class="large-6 columns">
+					            <label>Email
+					              <input type="email" placeholder="jon777@aol.com" />
+					            </label>
+					          </div>
+					        </div><!--/row -->	
+					        <div class="row">
+					          <div class="large-12 columns">
+					            <label>Notes (optional)
+					              <textarea placeholder=""></textarea>
+					            </label>
+					          </div>
+					        </div><!--/ row -->					        				        
+					        <div class="row">
+					          <div class="large-12 columns">
+						          <div class="alert-box secondary">
+					            <label>User is:</label>
+					            <input type="radio" name="active" value="Red" id="inactive"><label for="inactive">inactive</label>
+					            <input type="radio" name="active" value="Blue" id="active" checked><label for="active">active</label>
+						          </div>
+					          </div>
+					        </div>
+					        <div class="row">
+						        <div class="large-12 columns">
+							        <a class="button right success" href="#">Create new user</a>
+						        </div>
+					        </div>
+					      </form>
+					  </div>
+					</div>
+	      <a class="close-reveal-modal" aria-label="Close"><i class="fi-x no-words"></i></a>
+        </div><!-- / #bbModal -->
 
         <div id="bbGridSample"></div>
-      </div>
+        
+      </div><!-- / .action-panel -->
     </div><!--/ medium-12 -->
   </div><!--/ row -->
 
@@ -86,6 +156,10 @@
   <script type="text/javascript" src="includes/vendor/underscore/underscore-min.js"></script>
   <script type="text/javascript" src="includes/vendor/backbone/backbone.js"></script>
   <script type="text/javascript" src="includes/vendor/bbGrid/bbGrid.min.js"></script>
+  
+  <!-- resonsive table -->
+   
+  <script type="text/javascript" src="includes/vendor/responsive-tables/responsive-tables.js"></script>
 
   <script>
       $(document).foundation();
@@ -120,7 +194,7 @@ app.people = [
 app.personCollection = new app.PersonCollection(app.people);
 app.bbGridSampleTable = new bbGrid.View({
     css: 'foundation',
-    tableClass: 'naked',
+    tableClass: 'responsive naked',
     container: $('#bbGridSample'),
     collection: app.personCollection,
     minimalHeader: true,
