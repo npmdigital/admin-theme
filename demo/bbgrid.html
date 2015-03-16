@@ -185,6 +185,25 @@ app.people = [
     status: 'Active'
   },
   {
+    name: 'Tomas Budawap',
+    email: 'tmas@gmail.com',
+    grantee: 'Freedom Place',
+    status: 'Inactive'
+  },
+  {
+    name: 'Captian Planet',
+    email: 'sludgebuster@gmail.com',
+    grantee: 'The Powers Combined NW',
+    status: 'Active'
+  },
+  {
+    name: 'Spider Man',
+    email: 'sixlegs@webber.com',
+    grantee: 'NYC',
+    status: 'Active'
+  },
+  
+  {
     name: 'Audrey Hansen',
     email: 'cali@gmail.com',
     grantee: 'RESA 1',
@@ -222,13 +241,13 @@ app.bbGridSampleTable = new bbGrid.View({
         {
             label: 'Actions',
             sortable: false,
-            width: 125,
+						width: 80,
             render: function(model, view) {
               return '<a href="#" class="button radius success tiny"><i class="fi-magnifying-glass" data-original-title="View" title="View"> </i> </a>'
                 + ' <a href="#" class="button radius success tiny"><i class="fi-eye" data-original-title="Quick View" title="Quick View"> </i> </a>'
                 + ' <a href="#" class="button radius success tiny"><i class="fi-pencil" data-original-title="Edit" title="Edit"> </i> </a>'
                 + ' <a href="#" class="button radius alert tiny"><i class="fi-archive" data-original-title="Archive" title="Archive"> </i> </a>'
-                + ' <a href="#" class="button radius alert tiny"><i class="fi-trash" data-original-title="Delete" title="Delete"> </i> </a>';
+                + ' <a href="#" class="button radius alert tiny"><i class="fi-trash" data-original-title="Delete" title="Delete"> </i></a>';
             }
         }
     ],
