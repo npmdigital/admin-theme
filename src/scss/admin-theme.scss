@@ -80,7 +80,8 @@ h5 {
 	border-color: transparent;
 
 	i {
-		margin-right: 8px;
+    display: inline-block;
+    margin: 0 4px;
 
 		&.no-words {
 			margin-right: 0;
