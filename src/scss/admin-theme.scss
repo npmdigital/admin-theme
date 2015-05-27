@@ -32,7 +32,7 @@ body {
 #content {
 	padding-left: 220px;
 	position: relative;
-	
+
 	>.row {
 		width: 100%;
 		min-width: 100%;
@@ -186,23 +186,23 @@ a.grey {
 	list-style: none;
 	margin-left: 0;
 	margin-bottom: 2rem;
-	
+
 	li {
 		padding-bottom: .5rem;
-		
+
 		span {
 			color: $softgrey;
 		}
-	}	
+	}
 }
 
 .static-field {
-	
+
 	label {
 		text-transform: uppercase;
 		color: $dark;
 	}
-	
+
 	p {
 		color: $softgrey;
 		border-bottom: 1px solid $offwhite;
@@ -240,15 +240,15 @@ a.grey {
 	padding: 0;
 	margin-bottom: 2rem;
 	@extend .shadow;
-	
+
 		header {
 			padding: 1rem 1rem;
 			border-bottom: 1px solid $offwhite;
-			
+
 			h1,h2,h3 {
 				margin-bottom: 0;
 			}
-			
+
 			.button, a.button, button {
 				margin-bottom: 0;
 				margin-left: .5rem;
@@ -258,29 +258,29 @@ a.grey {
 				padding-right: 1rem;
 				font-size: 0.9rem;
 			}
-			
+
 		}
-		
+
 		footer {
 			background: $softwhite;
 			border-top: 1px solid $lightgrey;
 			padding: .5rem 1rem;
-			
+
 			a.button, button, .button {
 				margin-bottom: 0;
 			}
-			
+
 			span {
 				font-size: .8rem;
 				color: $softgrey;
 				line-height: 35px;
 			}
 		}
-		
+
 		.content {
 			padding: 1rem 1rem 1.5rem;
 		}
-	
+
 }
 
 .accordion {
@@ -398,7 +398,7 @@ header#masthead {
 			}
 		}
 	}// ul >
-	
+
 	ul.mobile-menu {
 		display: none;
 	}
@@ -413,39 +413,39 @@ header#masthead {
 	padding-top: 0;
 	position: fixed;
 	z-index: 1;
-	
-	
+
+
 	li {
 		position: relative;
-	
+
 		  a:not(.button) {
 			color: $offwhite;
 			font-size: 1rem;
-			
+
 			&:hover {
 				color: $green;
 			}
 		}
-		
+
 		> span {
 			color: $lightgrey;
 			padding: 0 1rem;
 		}
-		
+
 		&.active>a:first-child:not(.button) {
 			color: $green;
 		}
-		
+
 		ul {
 			list-style: none;
 			margin-left: 0;
 		}
 	}
-	
+
 	li.divider {
 		border-top-color: #454545;
 	}
-	
+
 	.hasChildren:before{
 		content: "";
 		display: block;
@@ -463,12 +463,12 @@ header#masthead {
 		top: 1.30625rem;
 		border-color: rgba(255,255,255, 0.4) transparent transparent transparent;
 	}
-	
-	
+
+
 }
 
 
-// Navigation media sizes 
+// Navigation media sizes
 
 // Larger than mobile
 @media only screen and (min-width: 40.063em) {
@@ -499,7 +499,7 @@ header#masthead {
 	background: $white;
 	border: none;
 	@extend .shadow;
-	
+
 	header {
 		border-bottom: 1px solid $offwhite;
 		margin-bottom: 2rem;
@@ -510,7 +510,7 @@ header#masthead {
 		margin: 4rem 0;
 		padding-top: 2rem;
 		padding-bottom: 0;
-		
+
 		span.prefix, label.prefix {
 			color: $grey;
 			background: transparent;
@@ -560,10 +560,6 @@ header#masthead {
 
 		th {
 			border-bottom: 1px solid $grey;
-		}
-
-		tr:nth-of-type(even) {
-			background: transparent;
 		}
 	}
 
