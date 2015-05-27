@@ -896,9 +896,13 @@ footer#mainfoot {
 
 .panel {
   .bbGrid {
-    tr {
-      th, td {
-        padding-left: 0 !important;
+    table {
+      &.naked {
+        tr {
+          th, td {
+            padding-left: 0;
+          }
+        }
       }
     }
   }
