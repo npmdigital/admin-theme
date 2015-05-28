@@ -871,6 +871,13 @@ footer#mainfoot {
 
 }
 
+table {
+  .button.tiny {
+    font-size: 20px;
+    padding: 3px;
+  }
+}
+
 .bbGrid {
   table {
     width: 100%;
@@ -879,11 +886,6 @@ footer#mainfoot {
 
     thead {
       background: transparent;
-    }
-
-    .button.tiny {
-      font-size: 20px;
-      padding: 3px;
     }
 
     td {
