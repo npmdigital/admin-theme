@@ -876,6 +876,12 @@ table {
     font-size: 20px;
     padding: 3px;
   }
+
+  td {
+    form {
+      display: inline-block;
+    }
+  }
 }
 
 .bbGrid {
@@ -886,12 +892,6 @@ table {
 
     thead {
       background: transparent;
-    }
-
-    td {
-      form {
-        display: inline-block;
-      }
     }
   }
 }
