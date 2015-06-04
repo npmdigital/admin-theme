@@ -33,7 +33,7 @@ body {
   padding-left: 220px;
   position: relative;
 
-  >.row {
+  >.row, >form>.row {
     width: 100%;
     min-width: 100%;
   }
